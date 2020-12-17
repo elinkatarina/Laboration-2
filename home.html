@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="sv-se">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Beställ din tårta</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <header class="header">
+         <nav class="nav">
+            <a href="#home" class="nav__link nav__link--left">Home</a>
+            <a href="#login" class="nav__link nav__link--right">Log in</a>
+         </nav>
+         <h1 class="h1"> Beställ din drömtårta! </h1>
+      </header>
+      <main class="main">
+         <div class="infotext">
+            <h2 class="h2"> Anpassa din tårta </h2>
+            <p class="infotextp">Fält markerade med * måste vara ifyllda</p>
+         </div>
+         <div class="caketype">
+            <form class="caketype__form">
+               <fieldset class="caketype__form__fieldset">
+                  <legend class="caketype__form__fieldset__legend">
+                     Typ av tårta
+                  </legend>
+                  <select id="caketype__form__cakeselect" name="cake">
+                     <option class="caketype__form__cakeselect__weddingcake" value="weddingcake">Bröllopstårta *</option>
+                     <option class="caketype__form__cakeselect__birthdaycake" value="birthdaycake">Födelsedagstårta *</option>
+                     <option class="caketype__form__cakeselect__princesscake" value="princesscake">Princesstårta *</option>
+                     <option class="caketype__form__cakeselect__funeralcake" value="funeralcake">Begravningstårta *</option>
+                  </select>
+               </fieldset>
+            </form>
+         </div>
+         <div class="caketoppings">
+            <form class="caketoppings__form">
+               <fieldset class="caketoppings__form__fieldset">
+                  <legend class="caketoppings__form__fieldset__legend">
+                     Toppings
+                  </legend>
+                  <input class="caketoppings__form__input__sprinkles" type="checkbox" id="sprinkle" name="sprinkles" value="sprinkle">
+                  <label class="caketoppings__form__input__sprinkles__label" for="sprinkle"> Strössel </label>
+                  <input class="caketoppings__form__input__chocolate" type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+                  <label class="caketoppings__form__input__chocolate__label" for="chocolate"> Choklad </label>
+                  <input class="caketoppings__form__input__strawberry" type="checkbox" id="strawberry" name="strawberry" value="strawberry">
+                  <label class="caketoppings__form__input__strawberry__label" for="strawberry"> Jordgubbar </label>
+                  <label class="caketoppings__form__input__textarea__label"> Eventuella allergier</label>
+                  <textarea class="caketoppings__form__input__textarea" id="allergies" name="allergies">
+			
+			</textarea>
+               </fieldset>
+            </form>
+         </div>
+         <div class="personalinfo">
+            <form class="personalinfo__form">
+               <fieldset class="personalinfo__form__fieldset">
+                  <legend class="personalinfo__form__fieldset__legend">
+                     Personlig information
+                  </legend>
+                  <label class="personalinfo__form__fname__label" for="fname"> Förnamn * </label>
+                  <input class="personalinfo__form__fname" type="text" id="fname" name="fname" placeholder="Anna">
+                  <label class="personalinfo__form__lname__label" for="lname"> Efternamn * </label>
+                  <input class="personalinfo__form__lname" type="text" id="lname" name="lname" placeholder="Andersson">
+                  <label class="personal__info__form__adress__label" for="adress">Adress * </label>
+                  <input class="personalinfo__form__adress" type="text" id="adress" name="adress" placeholder="Björkgatan 2">
+                  <label class="personal__info__form__zipcode__label" for="zipcode">Postnummer * </label>
+                  <input class="personalinfo__form__zipcode" type="text" id="zipcode" name="zipcode" placeholder="764 33">
+                  <label class="personal__info__form__email__label" for="email"> Epostadress * </label>
+                  <input class="personal__info__form__email" type="email" id="email" name="email" placeholder="anna@example.com">
+                  <label class="personal__info__form__password__label" for="password"> Lösenord * </label>
+                  <input class="personal__info__form__password" type="password" id="password" name="password" placeholder="*******">
+               </fieldset>
+            </form>
+         </div>
+         <div class="buttons">
+            <button class="reset">
+            Rensa
+            </button>
+            <button class="order">
+            Beställ
+            </button>
+            <p class="login">Redan medlem? <a href="#"> Logga in</a></p>
+         </div>
+      </main>
+   </body>
+</html>
