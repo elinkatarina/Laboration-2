@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.header {
+	height: 30rem;
+	width: 100%;
+	background-image: url("../images/donut.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+	margin-bottom: 4rem;
+}
+
+.nav {
+	height: 3rem;
+	background-color: rgba(251, 13, 120, 0.6);
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.nav__link {
+	color: #FFF;
+	padding: 1rem 1rem 1rem 1rem;
+	text-decoration: none;
+}
+
+.nav__link--left {
+	margin-right: auto;
+}
+
+.h1 {
+	font-size: 6rem;
+	text-align: center;
+	display: block;
+	margin-top: 7rem;
+	color: #FFF;
+}
+
+body {
+	background-color: #FFF;
+}
+
+.main {
+	background-color: #F0C2E9;
+	font-family: 'Merriweather', serif;
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.infotext {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.h2 {
+	color: #000;
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+}
+
+.infotextp {
+	color: #000;
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+}
+
+.caketype {
+	text-align: center;
+	width: 40%;
+	flex-direction: row;
+	height: 20rem;
+	margin-top: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.caketoppings {
+	text-align: center;
+	width: 40%;
+	flex-direction: row;
+	height: 20rem;
+	margin-top: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.caketype__form__fieldset {
+	height: 13rem;
+	padding-top: 1rem;
+}
+
+.caketoppings__form__fieldset {
+	height: 13rem;
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.caketoppings__form {
+	display: flex;
+	justify-content: center;
+}
+
+.caketoppings__form__input__textarea__label {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+
+.caketoppings__form__input__textarea {
+	width: 80%;
+	height: 60%;
+}
+
+.personalinfo {
+	height: 20rem;
+	width: 100%;
+}
+
+.personalinfo__form__fieldset {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 60%;
+	flex-wrap: nowrap;
+	align-items: center;
+	text-align: center;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+
+.reset,
+.order {
+	width: 6rem;
+	text-align: center;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	height: 2rem;
+	border-radius: 1rem;
+	border: none;
+	background-color: rgba(251, 13, 120, 0.6);
+	color: #FFF;
+}
+
+.reset {
+	background-color: #FF0004;
+}
+
+.reset:hover {
+	background-color: #5A0203;
+}
+
+.order:hover {
+	background-color: #5E1143;
+}
+
+.login {
+	display: flex;
+	padding-top: 1rem;
+	flex-direction: column;
+	text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+	.h1 {
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.h1 {
+		font-size: 4rem;
+	}
+	.caketoppings__form__input__textarea {
+		height: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.h1 {
+		font-size: 5rem;
+	}
+	@media only screen and (min-width: 992px) {
+		.caketoppings__form__input__textarea {
+			height: 60%;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		.caketype {
+			height: 23rem;
+		}
+		.caketoppings {
+			height: 23rem;
+		}
+		.caketype__form__fieldset {
+			height: 20rem;
+			margin-bottom: 3rem;
+		}
+		.caketoppings__form__fieldset {
+			height: 20rem;
+			margin-bottom: 3rem;
+		}
+		.personalinfo {
+			margin-top: 7rem;
+		}
+	}
+}
+
